@@ -1,0 +1,15 @@
+{
+	"apps" : [{    
+		"name"        	   : "movies",
+		"script"      	   : "./bin/www",
+		"merge_logs"  	   : true,    
+		"log_date_format"  : "YYYY-MM-DD HH:mm Z",
+		"error_file"       : "./logs/movies-err.log",
+		"out_file"         : "./logs/movies.log",
+		"max_restarts"     : 50,
+		"max_memory_restart": "1024M", 	
+		"exec_mode"        : "cluster",
+		"autorestart"      : true,
+		"watch":true
+		}]
+	}
